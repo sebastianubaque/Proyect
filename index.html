@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <title></title>
 <style type="text/css">
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
 .Menu{
     display:flex;
 		margin:auto;
@@ -25,7 +22,7 @@ ul, ol {
 				background-color:rgb(42, 42, 42);
 				color:#fff;
 				text-decoration:none;
-				padding:10px 12px;
+				padding:10px 10px;
 				display:block;
 			}
 .nav>li:nth-child(3)>a:nth-child(1):hover{
@@ -48,6 +45,7 @@ transition: .3s;
 				display:none;
 				position:absolute;
 				min-width:130px;
+        z-index: 2000;
 			}
 .nav li:hover > ul {
 				display:block;
@@ -77,7 +75,7 @@ transition: .3s;
         <li id="ordenardopor">
           <a>ORDENAR POR :</a></li>
         <li id="todos">
-          <a href="">todos &#9660;</a>
+          <a href="">Todos &#9660;</a>
 					<ul>
 						<li><a href="">Ultimas</a></li>
 						<li><a href="">HD</a></li>
@@ -91,49 +89,71 @@ transition: .3s;
      <button type="submit">Buscar</button>
  </form>
     </nav>
+      <nav>
+        <slide><p>Capitan America Infinity War</p></slide>
+        <slide><p>Jurassic Park Fallen Kingdom</p></slide>
+        <slide><p>Avengers Infinity War</p></slide>
+        <slide><p>Los Increibles 2</p></slide>
+        <slide><p>Coco</p></slide>
+      </nav>
+<div class="barra">
+  <h1><i class="fas fa-play play"></i> PELICULAS</h1>
+</div>
+<section>
+  
+<li>
+    <img src="Asset/la bella y la bestia.jpg" alt="">
+    <a href="">La Bella y la Bestia</a>
+    <h1>2016</h1>
+</li>
+<li>
+    <img src="Asset/the croods.jpg" alt="">
+    <a href="#">The Croods</a>
+    <h1>2017</h1>
+</li>
+<li>
+    <img src="Asset/the death.png" alt="">
+    <a href="#">The Death</a>
+    <h1>2015</h1>
+</li>
+<li>
+    <img src="Asset/Pacific_Rim-524748435-large(0).jpg" alt="">
+    <a href="#">Pacific Rim</a>
+    <h1>2018</h1>
+</li>
+<li>
+    <img src="Asset/las-mejores-peliculas-de-accion-crank-alto-voltaje-600x846.jpg" alt="">
+    <a href="#">Alto Voltaje</a>
+    <h1>2017</h1>
+</li>
+<li>
+    <img src="Asset/xXx-Return-of-Xander-Cage-2017.jpg" alt="">
+    <a href="#">xXx  Return Of Xander Cage</a>
+    <h1>2017</h1>
+</li>
+<li>
+    <img src="Asset/mujer maravilla.jpg" alt="">
+    <a href="#">La Mujer Maravilla</a>
+    <h1>2017</h1>
+</li>
+<li>
+    <img src="Asset\avengers 2.jpg" alt="">
+    <a href="#">Avengers 2</a>
+    <h1>2017</h1>
+</li>
+<li>
+    <img src="Asset\Capitán-Calzoncillos.jpg" alt="">
+    <a href="#">Capitán Calzoncillos</a>
+    <h1>2017</h1>
+</li>
+<li>
+    <img src="Asset\emoji.jpg" alt="">
+    <a href="#">Emoji</a>
+    <h1>2017</h1>
+</li>
 
-  <div class="w3-content w3-display-container" style="max-width:800px">
-    <img class="mySlides" src="Asset/capitan america cw.jpg" style="width:100%">
-    <img class="mySlides" src="Asset/la-gran-muralla.jpg" style="width:100%">
-    <img class="mySlides" src="Asset/vengadores iw.jpg" style="width:100%">
-    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    </div>
-  </div>
+</section>
 
-  <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-       dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    x[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " w3-white";
-  }
-  </script>
-
-
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   </body>
 </html>
