@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 *{
   margin: 0px;
   padding: 0px;
   background: black;
+  font-family: 'Nunito', sans-serif;
 }
 .Menu{
       background-color: rgb(42, 42, 42);
@@ -163,6 +165,7 @@ nav:nth-child(2) > *{
     background-image: url(../Asset/Avengers-Infinity-War.jpg);
     background-size: cover;
     background-position: center;
+
   }
   slide:nth-child(4){
     animation-delay: 6s;
@@ -176,7 +179,7 @@ nav:nth-child(2) > *{
     background-size: cover;
     background-position: center;
   }
-slide p {
+slide p{
   font-family: Comfortaa;
   font-size: 70px;
   text-align: center;
@@ -210,28 +213,31 @@ section {
  section Li img{
    width: 210px;
    height: 300px;
-   border-radius: 30px;
+   object-fit: cover;
+   border-radius: 10px 10px 0px 0px;
 }
 section li{
   width: 210px;
   height: 100%;
   display: inline-block;
-  margin: 4px 40px 4px 30px;
+  margin: 15px 40px 4px 30px;
   text-align: center;
   background-color: transparent;
   position: relative;
   background-image: url(../Asset/textura.jpg);
-  border-radius: 33px;
+  border-radius: 10px;
 
 
 }
 section li a{
-  color: black;
+  color: white;
   background-color: transparent;
+  font-size: 20px;
   text-decoration: none;
 }
 section li h1{
-  color: black;
+  color: white;
+  font-size: 20px;
   background-color: transparent;
 }
 div h1{
