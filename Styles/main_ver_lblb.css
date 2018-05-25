@@ -159,7 +159,7 @@ section Li img:hover{
 }
 section li{
   width: 350px;
-  height: 400px;
+  height: 460px;
   display: inline-block;
   margin: 8px 40px 0px 0px;
   text-align: center;
@@ -169,8 +169,6 @@ section li{
   border-radius: 10px;
   right: 35.5%;
   overflow: hidden;
-
-
 }
 section li:hover{
   transform: scale(1.03);
@@ -230,4 +228,40 @@ div h1 .play{
 div h1 i{
  width: 10px;
  height: 30px;
+}
+
+#linkyoutube{
+  position: relative;
+}
+/* ver pelis */
+section aside{
+  position: relative;
+  background-color: transparent;
+  bottom: 458px;
+  left: 13pc;
+  font-size: 37px;
+}
+section aside a{
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 3pc;
+  margin: 2pc;
+  color: white;                  
+}
+section aside a:hover{
+transform: scale(1.1);
+}
+/* trailer */
+section div{
+  background: transparent;
+  position: absolute;
+  font-size: 30px;
+  top: 196px;
+  left: 562px;
+  width: 666px;
+}
+section div h1{
+  color: white;
+  background: transparent;
+  margin-right: 31pc;
 }
