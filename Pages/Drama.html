@@ -1,4 +1,4 @@
- class="active"<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="../Styles/main.css">
 <link rel="stylesheet" href="../fonts.css">
@@ -42,7 +42,9 @@ width: 85px;
 transition: .3s;
 }
 .nav li a:hover{
-				background-color:#434343;
+        background-color:#434343;
+        border-bottom:  solid white 1.5px;
+  transition-duration: 0.5s;
 			}
 .nav li ul {
 				display:none;
@@ -60,6 +62,12 @@ transition: .3s;
 				right:-140px;
 				top:0px;
 }
+.nav li:active{
+  border-top: solid 2px;
+}
+.nav li:active{
+  border-top: solid 2px;
+}
   </style>
   </head>
   <body>
@@ -69,7 +77,7 @@ transition: .3s;
         <li><a href="../index.html">PELICULAS</a></li>
 				<li><a href="">CATEGORIAS &#9660;</a>
 					<ul>
-						<li><a href="Accion.html">Accion</a></li>
+						<li ><a href="Accion.html">Accion</a></li>
 						<li><a href="aventura.html">Aventura</a></li>
 						<li class="active"><a href="Drama.html">Drama</a></li>
 						<li><a href="Comedia.html">Comedia</a></li>

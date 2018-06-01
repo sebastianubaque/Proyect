@@ -238,7 +238,8 @@ section aside{
   position: relative;
   background-color: transparent;
   bottom: 458px;
-  left: 13pc;
+  width: 730px;
+  left: 32pc;
   font-size: 37px;
 }
 section aside a{
